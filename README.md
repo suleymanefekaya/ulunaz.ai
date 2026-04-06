@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ulunaz.ai
 
-## Getting Started
+Bursa Uludag Universitesi Inegol Isletme Fakultesi'nin yapay zeka kampus asistani.
 
-First, run the development server:
+Ulunaz (Nazli), Inegol Isletme Fakultesi kampusunun sevilen kopeginden esinlenen bir AI chatbot'tur. Ogrencilere fakulte, dersler, sinav takvimleri, topluluklar, barinma, ulasim ve Inegol sehri hakkinda bilgi verir.
+
+## Ozellikler
+
+- **AI Chatbot** - Gemini 2.0 Flash / DeepSeek destekli akilli asistan
+- **RAG Sistemi** - Yerel bilgi tabanindan anahtar kelime tabanli arama
+- **Sinav Takvimi** - Isletme, UTI ve YBS bolumlerinin vize programi
+- **Topluluk Bilgileri** - UYBiST, iNiT, UATT topluluk detaylari ve yonetim kadrolari
+- **Kampus Rehberi** - Barinma (KYK, ilim Yayma Cemiyeti), kantin, sosyal alanlar
+- **Inegol Sehir Rehberi** - Gezilecek yerler, kofteciler, parklar, AVM'ler, belediye hizmetleri
+- **Ulasim Bilgileri** - Inegol otobus hatlari, Gorukle kampusune metro rotasi
+- **Sohbet Gecmisi** - localStorage tabanli sohbet kaydi ve yonetimi
+- **Fotograf Destegi** - Ekip fotografini chatbot icinde gosterme
+
+## Teknolojiler
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Google Gemini API / DeepSeek API
+- Vercel AI SDK
+- Framer Motion
+
+## Kurulum
 
 ```bash
+# Bagimliliklar
+npm install
+
+# .env.local dosyasi olustur
+cp .env.example .env.local
+# GOOGLE_GENERATIVE_AI_API_KEY="..." ekle
+
+# Gelistirme sunucusu
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayicida [http://localhost:3000](http://localhost:3000) adresini ac.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Ekip
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Ulunaz Takimi** - UYBiST AR-GE Komitesi Hackathon Projesi
 
-## Learn More
+| Isim | Rol |
+|------|-----|
+| **Fatmanur Sena Bulbul** | Kaptan |
+| **Salih Bugra Bulbul** | Gelistirici |
+| **Suleyman Efe Kaya** | Gelistirici |
 
-To learn more about Next.js, take a look at the following resources:
+## Lisans
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Bu proje UYBiST AR-GE Komitesi hackathon yarismasi icin gelistirilmistir.
